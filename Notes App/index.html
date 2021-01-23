@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">Magic Notes</a>
+        <form class="d-flex">
+          <input
+            id="searchTxt"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container mx-10 my-3">
+      <h4 class="sr-only" for="inlineFormInputName">Title</h4>
+      <input type="text" class="form-control" id="title" placeholder="Title" />
+    </div>
+
+    <div class="container my-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add Notes</h5>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Create Note</label
+            >
+            <textarea
+              id="addTxt"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <button id="addBtn" class="btn btn-primary my-2">Add Note</button>
+        </div>
+      </div>
+      <h2 class="my-2">Your Notes</h2>
+      <hr />
+      <div id="notes" class="row my-2 container-fluid"></div>
+    </div>
+  </body>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <script src="app.js"></script>
+</html>
